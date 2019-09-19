@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Responsive.css">
+  <title>課題練習用サイト</title>
+</head>
+<body>
+<!-- ヘッダー -->
+  <header class="header-container">
+    <div class="header-left">
+      <div class="header-name">
+        DAICHI
+      </div>
+        <div class="header-icon">
+            <i class="fas fa-leaf"></i><span class="span">site_for_challenge</span>
+        </div>   
+    </div>
+    <div class="header-right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a id="contact" href="#">Contact</a>
+    </div>
+  </header>
+<!-- スマホのドロワーメニュー -->
+  <div id="drawer">
+    <div id="drawer_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="drawer_menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a id="contact"  href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+     <div class="background-img">
+       <h1>課題製作・練習用のサイトです。</h1>
+     </div>
+<!-- トップイメージ -->
+ <div class="top-wrapper"> 
+    <section>
+        <h1>【当サイトについて】</h1>
+        <p>これは課題製作用のWEBサイトで、flexboxを使ったレイアウトや、<br>Jqueryを用いた動的装飾を取り入れることを目的に練習用で作成しています。</p>
+    </section>
+<!-- タブメニュー -->
+    <section>
+      <h1 class="section-title">タブメニュー</h1>
+          <ul class="menu">
+            <li class="menu-btn active">タブメニュー</li>
+            <li class="menu-btn">HTML</li>
+            <li class="menu-btn">CSS</li>
+            <li class="menu-btn">js/jquery</li>
+            <li class="menu-btn">Git</li>
+            <li class="menu-btn">エディタ</li>
+            <li class="menu-btn menu-right">学習方法</li>
+          </ul>
+        <div class="tab">
+          <div class="tab-content active">
+            <ul>
+              <li>タブメニューの初期表示画面</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content html">
+            <ul>
+              <li>HTMLとは</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content css">
+            <ul>
+              <li>CSSとは</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content js">
+            <ul>
+              <li>js/jqueryとは</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content git">
+            <ul>
+              <li>Gitとは</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content editor">
+            <ul>
+              <li>エディタについて</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+          <div class="tab-content study">
+            <ul>
+              <li>学習方法について</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+              <li>〜〜〜</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+<!-- モーダルウィンドウ -->
+    <section>
+      <h1 class="section-title">モーダルウィンドウ</h1>
+          <p>Openをクリックするとモーダルウィンドウを表示します</p>
+          <button id="open" class="modal-button">Open</button>
+       <div id="modal">
+          <div id="overlay"></div>
+          <div id="modal-window">
+            <p>Closeをクリックするとモーダルウィンドウを非表示にします</p>
+            <button id="close" class="modal-button">Close</button>
+          </div>
+       </div>
+    </section>
+<!-- アコーディオンメニュー -->
+    <section>
+      <h1 class="section-title">アコーデオンメニュー</h1>
+      <div class="accordion">
+        <button class="menu-open" href="#">メニュー1</button>
+          <ul class="sub-menu">
+            <li class="sub-menu-content">コンテンツ1</li>
+            <li class="sub-menu-content">コンテンツ2</li>
+            <li class="sub-menu-content">コンテンツ3</li>
+            <li class="sub-menu-content">コンテンツ4</li>
+          </ul>
+        <button class="menu-open" href="#">メニュー2</button>
+          <ul class="sub-menu">
+            <li class="sub-menu-content">コンテンツ1</li>
+            <li class="sub-menu-content">コンテンツ2</li>
+            <li class="sub-menu-content">コンテンツ3</li>
+            <li class="sub-menu-content">コンテンツ4</li>
+          </ul>
+        <button class="menu-open" href="#">メニュー3</button>
+          <ul class="sub-menu">
+            <li class="sub-menu-content">コンテンツ1</li>
+            <li class="sub-menu-content">コンテンツ2</li>
+            <li class="sub-menu-content">コンテンツ3</li>
+            <li class="sub-menu-content">コンテンツ4</li>
+          </ul>
+        <button class="menu-open" href="#">メニュー4</button>
+          <ul class="sub-menu">
+            <li class="sub-menu-content">コンテンツ1</li>
+            <li class="sub-menu-content">コンテンツ2</li>
+            <li class="sub-menu-content">コンテンツ3</li>
+            <li class="sub-menu-content">コンテンツ4</li>
+          </ul>
+      </div>
+    </section>
+<!-- スライダー -->
+    <section>
+      <h1 class="section-title">スライダー</h1>
+      <div class="slider">
+        <div class="slideSet">
+            <div class="slide01 slide">slide1</div>
+            <div class="slide02 slide">slide2</div>
+            <div class="slide03 slide">slide3</div>
+            <div class="slide04 slide">slide4</div>
+            <div class="slide05 slide">slide5</div>
+        </div>
+      </div>
+      <div class="slidebtn">
+          <button class="slider-prev">前へ</button>
+          <button class="slider-next">次へ</button>
+      </div>
+    </section>
+  </div>
+  <script src="https://kit.fontawesome.com/ba645373e0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
