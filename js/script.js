@@ -70,6 +70,8 @@ $(function(){
 	$('.slider-next').click(function(){
 		slideCurrent++;
 		sliding();
-	});
+  });
+  
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 });
